@@ -57,7 +57,7 @@ export const TableData = ({users,onDeleteItem,sortById,page,setPage,
             </TableContainer>
             <Pagination 
                 onChange = {onPaginated}
-                count={Math.round(users.length/5)}
+                count={Math.ceil(users.length/5)}
                 />
         </div>
     )
